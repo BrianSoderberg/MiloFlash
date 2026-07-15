@@ -1,0 +1,4 @@
+[
+  { "version": "v1.5",  "file": "MILOV1.5.ino.merged.bin", "notes": "Latest — recommended" },
+  { "version": "v1.4",  "file": "MILOV1.4.ino.merged.bin", "notes": "May fail" },
+]
