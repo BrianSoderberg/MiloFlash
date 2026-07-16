@@ -1,8 +1,26 @@
 [
   {
-    "title": "MILO Intro Demo",
-    "caption": "First demo — a quick look at MILO in action.",
+    "title": "MILO Overview",
+    "caption": "A quick overview of MILO in action.",
     "source": "dropbox",
-    "url": "https://www.dropbox.com/scl/fi/q42ciz22umlaj9pov3w4g/IntroDemo.mp4?rlkey=fs8oemjpj4ok6ss2nl9ongtxd&st=qjeaocyw&raw=1"
+    "url": "https://www.dropbox.com/scl/fi/om2ionoiif7dq2w2bzk4z/MILOoverview.mp4?rlkey=ru4m8ar60rii7ft0iyx6l0mx1&st=ej8dgpnx&raw=1"
+  },
+  {
+    "title": "MILO Effects",
+    "caption": "How to set up your own custom Stomp Effects.",
+    "source": "dropbox",
+    "url": "https://www.dropbox.com/scl/fi/85u7pvwwtersqh0w0ibp4/MILOeffects.mp4?rlkey=yi7mq68o635f68bxn2i2aqjno&st=ez8cgs3z&raw=1"
+  },
+  {
+    "title": "MILO Expression Pedals",
+    "caption": "How to set up your own custom Stomp Expression pedals.",
+    "source": "dropbox",
+    "url": "https://www.dropbox.com/scl/fi/na3ysbhzttymljtgwz834/MILOexpressionPedals.mp4?rlkey=r1r9ujogs1vdcwpta0abs1ti7&st=cluseso2&raw=1"
+  {,
+  {
+    "title": "MILO Snaps",
+    "caption": "How to set up your own custom Stomp Snaps.",
+    "source": "dropbox",
+    "url": "https://www.dropbox.com/scl/fi/r867qz7dbdw6qmlhqqa1n/MILOsnaps.mp4?rlkey=k8ec5rw0wd3uqdtjwrp591fdl&st=mk7wmz5v&raw=1"
   }
 ]
