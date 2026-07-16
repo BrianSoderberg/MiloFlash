@@ -60,9 +60,19 @@
   .intro ol li{color:var(--text);font-size:14px;margin-bottom:12px;max-width:64ch}
   .intro ol li b{color:var(--green)}
 
+  .intro-hero{
+    width:100%;
+    height:auto;
+    display:block;
+    border:1px solid var(--line);
+    border-radius:10px;
+    background:#000;
+    margin:0 0 18px;
+  }
+
   .intro-grid{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     gap:14px;
     margin-top:20px;
   }
@@ -219,7 +229,7 @@
   <!-- ============ INTRO SECTION ============ -->
   <section class="intro">
     <h2 class="section-title">MILO Introduction</h2>
-    <p>Meet MILO (MIDI Intelligent Logic Operator). OK, that's a mouthful, but I needed to turn MILO into an acronym, because I like the name Milo.</p>
+    <img class="intro-hero" src="images/milo-top-view.png" alt="MILO top view showing footswitches and touch screen">
     <p>It's a smart (micro controller powered) platform that has a couple unique features:</p>
     <ol>
       <li><b>It's Intelligent</b> — for Boss devices, like the Katana Go, MILO syncs the device, meaning it reads the entire device and saves all the information. So, after syncing, when you start MILO it will read its Katana Go saved configuration. This allows MILO to present you with all the presets, along with their titles. You can navigate through the 30 presets, and when you select one, it takes you to the effects page associated with that preset with the on/off states shown. From the effects page you can toggle effects on and off, as well as the pedal effects.</li>
@@ -229,10 +239,6 @@
     <p>All the Stomps (effects, expression pedals and snaps) are saved to 16 footpedal slots, to be used during any preset.</p>
 
     <div class="intro-grid">
-      <figure class="intro-figure">
-        <img src="images/milo-top-view.png" alt="MILO top view showing footswitches and touch screen">
-        <figcaption>Top view — 8 footswitches and 4&quot; touch screen to program MILO (shown with Katana GO firmware)</figcaption>
-      </figure>
       <figure class="intro-figure">
         <img src="images/milo-front-panel.png" alt="MILO front panel showing USB-C, power jack, and TRS jacks">
         <figcaption>Front panel — includes: USB-C (power, new firmware, backups), 9V power jack, 4 TRS jacks for expression pedals or MIDI device connection</figcaption>
@@ -244,15 +250,11 @@
     </div>
   </section>
 
-  <div class="warn-banner" id="browserWarn">
-    Your browser doesn't support the Web Serial API. Please open this page in <strong>Chrome</strong>, <strong>Edge</strong>, or <strong>Opera</strong> on desktop to use the flashing tool.
-  </div>
-
   <!-- ============ TABS ============ -->
   <div class="tabs" role="tablist">
     <button class="tab-btn" id="tabBtnGuide" role="tab" aria-selected="true" aria-controls="panelGuide">User Guide</button>
-    <button class="tab-btn" id="tabBtnFlash" role="tab" aria-selected="false" aria-controls="panelFlash">Firmware Flashing</button>
     <button class="tab-btn" id="tabBtnVideos" role="tab" aria-selected="false" aria-controls="panelVideos">Videos</button>
+    <button class="tab-btn" id="tabBtnFlash" role="tab" aria-selected="false" aria-controls="panelFlash">Firmware Flashing</button>
   </div>
 
   <!-- ============ USER GUIDE PANEL ============ -->
@@ -268,16 +270,26 @@
     </div>
   </section>
 
+  <!-- ============ VIDEOS PANEL ============ -->
+  <section class="tab-panel" id="panelVideos" role="tabpanel">
+    <div class="card">
+      <h3>Demos &amp; walkthroughs</h3>
+      <p>Watch MILO in action, or follow along with a setup walkthrough.</p>
+      <div class="video-grid" id="videoGrid">
+        <p class="video-caption">Loading videos…</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ FLASHING PANEL ============ -->
   <section class="tab-panel" id="panelFlash" role="tabpanel">
+    <div class="warn-banner" id="browserWarn">
+      Your browser doesn't support the Web Serial API. Please open this page in <strong>Chrome</strong>, <strong>Edge</strong>, or <strong>Opera</strong> on desktop to use the flashing tool.
+    </div>
+
     <div class="card">
       <h3>Instructions</h3>
-      <p>Read this before flashing — covers cables, browser support, and troubleshooting.</p>
-      <div class="row">
-        <a class="button-link" href="Milo-Firmware-Flasher-Instructions.docx" target="_blank" rel="noopener">
-          📄 Open flashing instructions (.docx)
-        </a>
-      </div>
+      <p>Refer to User Guide for flashing instructions.</p>
     </div>
 
     <div class="card">
@@ -316,17 +328,6 @@
       <h3>Log</h3>
       <div id="log">Connect your board and press "Connect device" to begin.
 </div>
-    </div>
-  </section>
-
-  <!-- ============ VIDEOS PANEL ============ -->
-  <section class="tab-panel" id="panelVideos" role="tabpanel">
-    <div class="card">
-      <h3>Demos &amp; walkthroughs</h3>
-      <p>Watch MILO in action, or follow along with a setup walkthrough.</p>
-      <div class="video-grid" id="videoGrid">
-        <p class="video-caption">Loading videos…</p>
-      </div>
     </div>
   </section>
 
