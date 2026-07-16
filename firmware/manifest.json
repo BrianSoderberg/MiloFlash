@@ -1,4 +1,4 @@
 [
-  { "version": "v1.5",  "file": "MiloV1.5.ino.merged.bin", "notes": "Latest — recommended" },
-  { "version": "v1.4",  "file": "MiloV1.4.ino.merged.bin", "notes": "May fail" }
+  { "version": "v1.5", "file": "MiloV1_5_ino_merged.bin", "notes": "Latest — recommended" },
+  { "version": "v1.4", "file": "MiloV1_4_ino_merged.bin", "notes": "May fail" }
 ]

@@ -1,3 +1,8 @@
 [
-  { "version": "v1.0",  "file": "MiloIntroDemo.mp4", "notes": "First demo!" }
+  {
+    "title": "MILO Intro Demo",
+    "caption": "First demo — a quick look at MILO in action.",
+    "source": "dropbox",
+    "url": "https://www.dropbox.com/scl/fi/REPLACE_ME/MiloIntroDemo.mp4?rlkey=REPLACE_ME&raw=1"
+  }
 ]
